@@ -126,16 +126,6 @@ header a{
   margin-top:20px;
 }
 
-/* .disclaimer{
-  background:black;
-  width:100%;
-} */
-
-/* .disclaimer p{
-color:white;
-line-height:40px;
-} */
-
 .breadcrumb{
   background:rgba(230,230,230);
   border-bottom:1px solid rgba(0,0,0,0.1);
@@ -155,12 +145,8 @@ line-height:40px;
   transition: all 0.3s;
 }
 
-/* .product:hover{
-  border-color:#ED0000;
-} */
-
 .basketImage img{
-  width:520px;
+  width:450px;
 }
 
 .description{
