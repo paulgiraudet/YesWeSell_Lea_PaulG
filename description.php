@@ -1,13 +1,41 @@
 <?php
-$title=$_POST['name'];
+
+$products = [
+  [
+    'name' => 'Chaussures Checkerboard Classic',
+    'description' => "Chaussures basses sans lacets, les Classic Slip-On sont dotées de finitions élastiques sur les côtés et d'un col rembourré pour plus de confort.",
+    'price' => '€ 65,00',
+    'picture' => 'basket1_blanc.png'
+  ],
+  [
+    'name' => 'Chaussures en daim Authentic',
+    'description' => "Chaussures basses à lacets, les Authentic en daim de Vans arborent des coutures classiques et l'étiquette de la marque. Elles reposent sur une semelle extérieure gaufrée pour une adhérence accrue.",
+    'price' => '€ 80,00',
+    'picture' => 'basket2_bleu.png'
+  ],
+  [
+    'name' => 'Chaussures Sk8-Hi MTE',
+    'description' => "Sa semelle vulcanisée crantée offre une adhérence optimale tandis que son bout renforcé résiste à l'usure. Un col rembourré vient aussi offrir davantage de confort.",
+    'price' => '€ 110,00',
+    'picture' => 'basket3_beige.png'
+  ],
+  [
+    'name' => 'Chaussures AVE Rapidweld Pro Lite',
+    'description' => "Outre sa tige en synthétique, cette chaussure légère intègre une membrane Rapidweld sans coutures équipée de renforts DURACAP™ sur les zones les plus exposées à l'usure pour la durabilité et une semelle intérieure UltraCush Lite™ 3D pour plus de confort.",
+    'price' => '€ 110,00',
+    'picture' => 'basket4_blanc.png'
+  ]
+];
+$title=$products[$_GET['index']]['name'];
 include('header.php');
+
 ?>
 
 
   <nav aria-label="breadcrumb" class="mt-5">
     <ol class="breadcrumb mt-5">
       <li class="breadcrumb-item mt-5"><a href="index.php">Accueil</a></li>
-      <li class="breadcrumb-item active mt-5" aria-current="page"><?php echo $_POST['name'] ?></li>
+      <li class="breadcrumb-item active mt-5" aria-current="page"><?php echo $products[$_GET['index']]['name'] ?></li>
     </ol>
   </nav>
 
@@ -16,13 +44,13 @@ include('header.php');
     <div class="row p-0">
 
       <div class="col-12 col-md-6 mt-2 basketImage">
-        <img src="img/<?php echo $_POST['picture'] ?>" alt="first picture of basket" class="img-fluid">
+        <img src="img/<?php echo $products[$_GET['index']]['picture'] ?>" alt="first picture of basket" class="img-fluid">
       </div>
 
       <div class="col-12 col-md-6 mt-2">
-        <h2 class="font-weight-bold mt-3"><?php echo $_POST['name'] ?></h2>
+        <h2 class="font-weight-bold mt-3"><?php echo $products[$_GET['index']]['name'] ?></h2>
         <p class="description">Description</p>
-        <p class="aboutDescription"><?php echo $_POST['description'] ?></p>
+        <p class="aboutDescription"><?php echo $products[$_GET['index']]['description'] ?></p>
 
         <div class="productColor d-flex mt-4">
           <div class="firstColor clickActive d-flex justify-content-center align-items-center activeTouch">
@@ -57,7 +85,7 @@ include('header.php');
           </div>
         </div>
 
-        <p class="description mt-2"><?php echo $_POST['price'] ?></p>
+        <p class="description mt-2"><?php echo $products[$_GET['index']]['price'] ?></p>
       </div>
 
     </div>

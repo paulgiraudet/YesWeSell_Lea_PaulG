@@ -145,6 +145,10 @@ header a{
   transition: all 0.3s;
 }
 
+.product:hover{
+  border-color:#ED0000;
+}
+
 .basketImage img{
   width:450px;
 }

@@ -1,4 +1,5 @@
 <?php
+$index="";
 $title="YesWeSell";
 include('header.php');
 ?>
@@ -39,22 +40,14 @@ include('header.php');
           'picture' => 'basket4_blanc.png'
         ]
       ];
-      foreach($products as $product){
-
+      foreach($products as $key => $product){
           ?>
-          <form method="post" action="description.php"  class="col-md-3 col-sm-6 product p-0 mb-3 mb-md-0">
-            <input type="hidden" name="name" value="<?php echo $product['name'] ?>" />
-            <input type="hidden" name="price" value="<?php echo $product['price'] ?>" />
-            <input type="hidden" name="picture" value="<?php echo $product['picture'] ?>" />
-            <input type="hidden" name="description" value="<?php echo $product['description'] ?>" />
 
-            <button type="submit" class="w-100 h-100 text-left pt-2">
+            <a href="description.php?index=<?php echo $key; ?>" class="col-md-3 col-sm-6 product p-0 mb-3 mb-md-0">
               <img src= "img/<?php echo $product['picture'] ?>" alt="first product" class="img-fluid">
               <p class="productName font-weight-bold mt-2 mx-2"> <?php echo $product['name'] ?> <br/>
               <span class="aboutDescription"><?php echo $product['price'] ?></span></p>
-            </button>
-
-          </form>
+            </a>
 
         <?php
       };
