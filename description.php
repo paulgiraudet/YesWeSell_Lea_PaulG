@@ -28,16 +28,17 @@
     </div> -->
   </header>
 
+  <nav aria-label="breadcrumb" class="mt-5">
+    <ol class="breadcrumb mt-5">
+      <li class="breadcrumb-item mt-5"><a href="index.html">Accueil</a></li>
+      <li class="breadcrumb-item active mt-5" aria-current="page">Chaussures AVE Rapidweld Pro Lite</li>
+    </ol>
+  </nav>
+
   <div class="container mt-5 pt-5">
 
     <div class="row p-0">
 
-      <nav aria-label="breadcrumb" class="col-12">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Chaussures AVE Rapidweld Pro Lite</li>
-        </ol>
-      </nav>
 
       <div class="col-12 col-md-6 mt-2 basketImage">
         <img src="img/basket1_blanc.png" alt="first picture of basket" class="img-fluid">
