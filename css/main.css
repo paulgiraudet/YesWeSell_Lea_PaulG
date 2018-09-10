@@ -109,6 +109,7 @@ header{
   background:white;
   width:100%;
   height:100px;
+  z-index:10;
 }
 
 .colorTouch{
@@ -130,14 +131,41 @@ header a{
   width:100%;
 }
 
+.breadcrumb{
+  background:rgba(230,230,230);
+  border-bottom:1px solid rgba(0,0,0,0.1);
+  border-radius:0;
+}
+
 .disclaimer p{
   color:white;
   line-height:40px;
 }
 
+.basketImage img{
+  width:520px;
+}
 
+.description{
+  font-size:25px;
+  color:rgba(0,0,0,0.7);
+}
 
+.aboutDescription{
+  font-size:18px;
+  color:rgba(0,0,0,0.5);
+}
 
+.firstColor, .secondColor, .thirdColor, .shoeSize{
+  width:55px;
+  height:55px;
+  border:2px solid rgba(0,0,0,0.7);
+  margin-right:20px;
+}
+
+.activeTouch{
+  border-color:#ED0000;
+}
 
 
 
