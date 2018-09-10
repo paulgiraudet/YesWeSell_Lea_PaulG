@@ -1,3 +1,14 @@
+<?php
+
+$products = array(
+  array('name' => 'Chaussures Checkerboard Classic Slip-On', 'description' => "Chaussures basses sans lacets, les Classic Slip-On sont dotées de finitions élastiques sur les côtés et d'un col rembourré pour plus de confort.", 'prix' => '€ 65,00', 'picture' => '1_blanc'),
+  array('name' => 'Chaussures en daim Authentic', 'description' => "Chaussures basses à lacets, les Authentic en daim de Vans arborent des coutures classiques et l'étiquette de la marque. Elles reposent sur une semelle extérieure gaufrée pour une adhérence accrue.", 'prix' => '€ 80,00', 'picture' => '2_bleu'),
+  array('name' => 'Chaussures Sk8-Hi MTE', 'description' => "Sa semelle vulcanisée crantée offre une adhérence optimale tandis que son bout renforcé résiste à l'usure. Un col rembourré vient aussi offrir davantage de confort.", 'prix' => '€ 110,00', 'picture' => '3_beige'),
+  array('name' => 'Chaussures AVE Rapidweld Pro Lite', 'description' => "Outre sa tige en synthétique, cette chaussure légère intègre une membrane Rapidweld sans coutures équipée de renforts DURACAP™ sur les zones les plus exposées à l'usure pour la durabilité et une semelle intérieure UltraCush Lite™ 3D pour plus de confort.", 'prix' => '€ 110,00', 'picture' => '4_blanc')
+);
+
+$productSelect = $_GET['productSelect'];
+?>
 <!doctype html>
 <html class="no-js" lang="fr">
 
@@ -45,7 +56,7 @@
       </div>
 
       <div class="col-12 col-md-6 mt-2">
-        <h2 class="font-weight-bold mt-3">Chaussures AVE Rapidweld Pro Lite</h2>
+        <h2 class="font-weight-bold mt-3"><?php echo $productSelect['name'];?></h2>
         <p class="description">Description</p>
         <p class="aboutDescription">Outre sa tige en synthétique, cette chaussure légère intègre une membrane Rapidweld sans coutures équipée de renforts DURACAP™ sur les zones les plus exposées à l'usure pour la durabilité et une semelle intérieure UltraCush Lite™ 3D pour plus de confort.</p>
 
@@ -88,7 +99,8 @@
     </div>
 
     <?php echo 'img/basket' . $_GET['basketType'] . '.png'; ?>
-    <?php echo $_GET['test']; ?>
+    <?php echo $_GET['test'];
+    echo $productSelect;?>
   </div>
     <script src="js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

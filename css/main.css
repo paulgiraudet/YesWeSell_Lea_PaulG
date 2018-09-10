@@ -155,9 +155,9 @@ line-height:40px;
   transition: all 0.3s;
 }
 
-.product:hover{
+/* .product:hover{
   border-color:#ED0000;
-}
+} */
 
 .basketImage img{
   width:520px;
