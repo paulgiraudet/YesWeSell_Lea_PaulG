@@ -3,7 +3,7 @@ $index="";
 $title="YesWeSell";
 include('header.php');
 ?>
-  <nav aria-label="breadcrumb" class="mt-5">
+  <nav aria-label="breadcrumb" class="breadMargin">
     <ol class="breadcrumb mt-5">
       <li class="breadcrumb-item active mt-5" aria-current="page">Accueil</li>
     </ol>
@@ -35,7 +35,7 @@ include('header.php');
         ],
         [
           'name' => 'Chaussures AVE Rapidweld Pro Lite',
-          'description' => "Outre sa tige en synthétique, cette chaussure légère intègre une membrane Rapidweld sans coutures équipée de renforts DURACAP™ sur les zones les plus exposées à l'usure pour la durabilité et une semelle intérieure UltraCush Lite™ 3D pour plus de confort.",
+          'description' => "Équipée d'une doublure intérieure Luxliner™ associée à sa construction Pro Vulc Lite, l'AV Rapidweld Pro allie légèreté, sensibilité et durabilité.",
           'price' => '€ 110,00',
           'picture' => 'basket4_blanc.png'
         ]
