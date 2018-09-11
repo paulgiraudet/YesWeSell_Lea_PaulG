@@ -21,7 +21,7 @@ $products = [
   ],
   [
     'name' => 'Chaussures AVE Rapidweld Pro Lite',
-    'description' => "Outre sa tige en synthétique, cette chaussure légère intègre une membrane Rapidweld sans coutures équipée de renforts DURACAP™ sur les zones les plus exposées à l'usure pour la durabilité et une semelle intérieure UltraCush Lite™ 3D pour plus de confort.",
+    'description' => "Équipée d'une doublure intérieure Luxliner™ associée à sa construction Pro Vulc Lite, l'AV Rapidweld Pro allie légèreté, sensibilité et durabilité.",
     'price' => '€ 110,00',
     'picture' => 'basket4_blanc.png'
   ]
@@ -32,14 +32,14 @@ include('header.php');
 ?>
 
 
-  <nav aria-label="breadcrumb" class="mt-5">
+  <nav aria-label="breadcrumb" class="breadMargin">
     <ol class="breadcrumb mt-5">
       <li class="breadcrumb-item mt-5"><a href="index.php">Accueil</a></li>
       <li class="breadcrumb-item active mt-5" aria-current="page"><?php echo $products[$_GET['index']]['name'] ?></li>
     </ol>
   </nav>
 
-  <div class="container mt-4">
+  <div class="container my-4 pb-3">
 
     <div class="row p-0">
 
@@ -65,7 +65,7 @@ include('header.php');
         </div>
 
         <div class="shoeSizeList d-flex flex-wrap mt-3">
-          <div class="shoeSize mb-3 font-weight-bold d-flex justify-content-center align-items-center activeTouch">
+          <div class="shoeSize mb-3 font-weight-bold d-flex justify-content-center align-items-center">
             39
           </div>
           <div class="shoeSize mb-3 font-weight-bold d-flex justify-content-center align-items-center">
@@ -91,18 +91,5 @@ include('header.php');
     </div>
 
   </div>
-    <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
 
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <script>
-      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-      ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-  </body>
-
-  </html>
+<?php include('footer.php'); ?>
