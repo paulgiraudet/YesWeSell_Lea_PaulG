@@ -12,4 +12,5 @@ adding admin session with the possibility to add a new product if all the fields
 
 have to change the cart incrementation with the use of a cookie or with a globad session var instead of a javascript function cause we can't keep our cart full
 
-dont forget to add your password into the admin.php, verif.php, header.php in order to connect to your database
+dont forget to add your password into the admin.php, verif.php, header.php, description.php in order to connect to your database
+(thinking about using an include just for the database connection)
