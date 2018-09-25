@@ -1,14 +1,8 @@
 <?php
-//starting session at the start of each page
-session_start();
-
-
-try {
-  $bdd = new PDO('mysql:host=localhost;dbname=YesWeSell;charset=utf8', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-}
-catch (\Exception $e) {
-  die('Erreur : ' . $e->getMessage());
-}
+// //starting session at the start of each page
+// session_start();
+//
+$bdd = bddConnect();
 
 //getting all the username and password from database
 $reqLog = $bdd->query('SELECT name, password FROM members');
@@ -24,7 +18,7 @@ if (((isset($_POST['username']) AND htmlspecialchars($_POST['username']) == $log
   $_SESSION['username'] = 'admin';
   $_SESSION['password'] = 'admin';
   $title = " - Administration page";
-  include('header.php');
+  include('view/frontend/header.php');
   ?>
 
   <div class="onepage py-5 container-fluid">
@@ -66,7 +60,7 @@ if (((isset($_POST['username']) AND htmlspecialchars($_POST['username']) == $log
   </div>
 <?php
 
-include('footer.php');
+include('view/frontend/footer.php');
 }
 
 // else we get an error message for peoples trying to break the rules

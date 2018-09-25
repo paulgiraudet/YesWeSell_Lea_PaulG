@@ -5,7 +5,7 @@ session_start();
 //checking if we have a valid message
 if (isset($_POST['message']) AND !empty($_POST['message'])){
   $title = " - Message Sent !";
-  include('header.php');
+  include('view/frontend/header.php');
  ?>
  <div class="onepage d-flex justify-content-center align-items-center flex-column">
   <p class="validMessage">Votre message a bien été envoyé  <br/>
@@ -37,4 +37,4 @@ else{
 <a href="index.php"><button type="button" name="button" class="btn colorButton">Retour à l'accueil</button></a>
 </div>
 
-<?php include('footer.php');?>
+<?php include('view/frontend/footer.php');?>
