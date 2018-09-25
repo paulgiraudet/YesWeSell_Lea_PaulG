@@ -1,10 +1,11 @@
 <?php
 // //starting session at the start of each page
 // session_start();
+include ('view/frontend/header.php');
 require ('controller/controller.php');
 $index = "";
 $title = " - Accueil";
-include('view/frontend/header.php');
+
 
 ?>
 
@@ -18,4 +19,4 @@ include('view/frontend/header.php');
   <div class="container-fluid productsList">
     <div class="row p-3">
 <?php
-  include('view/frontend/footer.php');
+  include ('view/frontend/footer.php');
